@@ -3,6 +3,7 @@
 A full-sized drag & drop event calendar (jQuery plugin).
 
 - [Project website and demos](http://arshaw.com/fullcalendar/)
+- [my Demo](http://dizzyeyes.github.io/fullcalendar/)
 - [Documentation](http://arshaw.com/fullcalendar/docs/)
 - [Support](http://arshaw.com/fullcalendar/support/)
 - [Changelog](changelog.md)
