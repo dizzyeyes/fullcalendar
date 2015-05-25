@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<title>FullCalendar - JavaScript Event Calendar (jQuery plugin)</title>
+
+			<meta name='description' content='Open source JavaScript jQuery plugin for a full-sized, drag &amp; drop event calendar'>
+	<meta name='keywords' content='calendar, JavaScript, jQuery, events, drag and drop'>
+	<meta name='author' content='Adam Shaw'>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+    
+		<link href='css/base.css' rel='stylesheet' />
+		<link rel='stylesheet' href='../dist/fullcalendar.min.css' />
+
+			<script src='../lib/moment/moment.js'></script>
+	<!--[if lt IE 9]>
+    <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+    <script type='text/javascript' src='../lib/jquery/dist/jquery.min.js'></script>
+<!--<![endif]-->	<script src='../dist/fullcalendar.min.js'></script>
+	<script src='js/home.js'></script>
+
+</head>
+<body id='home-page'>
+
+	<div id='head'>
+		<div>
+			<div class='left'>
+				<a href='/'>
+					<img id='logo' src='images/logo.svg' width='58' height='48' />
+					<h1><span>Full</span>Calendar</h1>
+				</a>
+			</div>
+			<div class='right'>
+									<ul id='nav'>
+						<li class='selected'>
+							<a href='/'>Intro</a>
+						</li>
+													<li>
+								<a href='/docs/'>Docs</a>
+							</li>
+												<li>
+							<a href='/download/'>Download</a>
+						</li>
+						<li >
+							<a href='/wiki/Support/'>Support</a>
+						</li>
+						<li>
+							<a href='/wiki/Contributing/'>Contribute</a>
+						</li>
+						<li>
+							<a href='/license/'>License</a>
+						</li>
+					</ul>
+							</div>
+			<div class='clear'></div>
+		</div>
+	</div>
+
+	<div id='banner'>
+		<div>
+				<h2>
+		A JavaScript event calendar. Customizable and open source.
+	</h2>
+	<p>
+		FullCalendar is a jQuery plugin that provides a full-sized, drag &amp; drop event calendar like the one below.
+		It uses AJAX to fetch events on-the-fly and is easily configured to use your own feed format.
+		It is visually customizable with a rich API.
+	</p>
+		</div>
+	</div>
+
+	
+	<div id='body'>
+		<div>
+				<div class='two-col'>
+		<div class='content'>
+			<div id='calendar'></div>
+			<div class='larger-link-wrap'>
+				<a href='agenda-views.html' target='_blank'>Larger version of this demo</a>
+			</div>
+		</div>
+		<div class='sidebar'>
+			<h3>Other Demos</h3>
+			<ul>
+				<li><a href='basic-views.html' target='_blank'>Basic views</a></li>
+				<li><a href='languages.html' target='_blank'>Internationalization</a></li>
+				<li><a href='timezones.html' target='_blank'>Timezone support</a></li>
+				<li><a href='gcal.html' target='_blank'>Google Calendar</a></li>
+				<li><a href='theme.html' target='_blank'>jQuery UI theme</a></li>
+				<li><a href='selectable.html' target='_blank'>Selecting time ranges</a></li>
+				<li><a href='external-dragging.html' target='_blank'>External events</a></li>
+				<li><a href='background-events.html' target='_blank'>Background events</a></li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<p>
+			<strong>DISCLAIMER</strong> :
+			FullCalendar is great for displaying events, but it isn't a complete solution for event content-management.
+			Beyond dragging an event to a different time/day, you cannot change an event's name or other associated data.
+			It is up to you to add this functionality through FullCalendar's event hooks.
+		</p>
+	</div>
+		</div>
+	</div>
+
+	<div id='foot'>
+		<div>
+			<div class='left'>
+				<ul>
+					<li><a href='https://github.com/arshaw/fullcalendar/releases' target='_blank'>v2.3.1</a>
+						released Mar 8th 2015</li>
+					<li><a href='/timeline/'>Resource / Timeline View</a></li>
+				</ul>
+				<ul>
+					<li><a href='https://github.com/arshaw/fullcalendar' target='_blank'>GitHub</a></li>
+					<li><a href='http://blog.arshaw.com/' target='_blank'>Blog</a></li>
+					<li><a href='#' onclick='document.ppform.submit();return false'>Donate</a></li>
+					<li><a href='http://blog.arshaw.com/1/post/2014/06/company-uses-fullcalendar.html' target='_blank'>Tell us about your company</a></li>
+				</ul>
+			</div>
+			<div class='right'>
+				<div>&copy; 2015 <a href='http://arshaw.com/' target='_blank'>Adam Shaw</a></div>
+				<div>Licensed under the <a href='/license/'>MIT License</a></div>
+			</div>
+			<div class='clear'></div>
+		</div>
+	</div>
+
+	<form name='ppform' action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style='display:inline'>
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="5971120">
+		<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+
+</body>
+</html>
